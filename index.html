@@ -1,93 +1,573 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <!-- Let browser know website is optimized for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Franklin Christopher Brooks</title>
     <link rel="icon" href="images/favicon.ico">
-    <link rel="image_src" href="img/og-image.png">
+    <link rel="image_src" href="images/og-image.png">
     <link rel="alternate" hreflang="en-us" href="http://www.franklinchristopherbrooks.com/"/>
     <link rel="canonical" href="http://www.franklinchristopherbrooks.com/"/>
     <link type="text/plain" rel="author" href="http://www.franklinchristopherbrooks.com/"/>
+    <!-- OPEN GRAPH SECTION -->
     <meta property="og:url" content="http://www.franklinchristopherbrooks.com/">
     <meta property="og:title" content="Franklin Christopher Brooks | Web Developer">
     <meta property="og:site_name" content="Franklin Christopher Brooks | Web Developer">
     <meta property="og:locale" content="en_US">
-    <meta property="og:description" content="Franklin Christopher Brooks is a candidate for NYC-based web developer immersive programs.">
-    <meta property="og:image" content="img/og-image.png">
+    <meta property="og:description" content="Franklin Christopher Brooks is a NYC-based web developer.">
+    <meta property="og:image" content="images/og-image.png">
     <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1468">
-    <meta property="og:image:height" content="889">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="627">
     <meta name="author" content="Franklin Christopher Brooks">
-    <title>Franklin Christopher Brooks</title>
+    <!-- JavaScript libraries -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.js"></script>
+    <!--Import Google Fonts-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400;300' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <!-- Local Scripts and Styles -->
+    <link href="style.css" type="text/css" rel="stylesheet" media="screen"/>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header class="inline">
-<!-- sliding menu starts here! -->
-      <div class="menu">
-      <!-- Menu icon -->
-      <div class="icon-close">
-        <img src="images/close.png" alt="Close pop-out menu">
+    <!-- parallax header -->
+    <header class="">
+      <div class="navbar-fixed">
+        <nav class="">
+          <a id="logo-container" href="/" class="brand-logo" style="font-family: 'Pacifico', cursive; display:inline-block">&nbsp; FCB &nbsp;</a>
+          <div class="nav-wrapper container">
+            <a href="/" class="mobile-hide">&nbsp;Franklin Christopher Brooks&nbsp;</a><span class="mobile-hide"> | </span>
+            <p style="display:inline-block"><span class="mobile-hide-2"> Web Developer </span></p>
+            <!-- DESKTOP NAV BAR -->
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#about" class="">About</a></li>
+              <li><a href="#projects" class="">Projects</a></li>
+              <li><a href="#contact" class="">Contact</a></li>
+            </ul>
+            <!-- MOBILE NAV AREA -->
+            <ul id="nav-mobile" class="side-nav">
+              <li><a href="/">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="" id="hamburger" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+          </div>
+        </nav>
       </div>
-
-      <!-- Menu -->
-      <ul>
-        <li><a href="about.html">About</a></li>
-       <!-- <li><a href="blog.html">Blog</a></li> -->
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    </header>
+    <!-- PARALLAX JUMBOTRON -->
+    <div id="index-banner" class="parallax-container">
+      <div class="section no-pad-bot">
+        <div class="container">
+          <br>
+          <br>
+          <h1 class="header center">Franklin Christopher Brooks is a NYC-based
+            <br>
+            web developer.
+          </h1>
+<div class="divider"></div>
+          <div class="row center">
+            <h5 id="stretch" class="header center">*Available from March 2017*</h5>
+          </div>
+          <div class="row center">
+            <a href="#about" id="more_button" class="btn-large waves-effect waves-light red">SEE MORE</a>
+          </div>
+          <br>
+          <br>
+        </div>
+      </div>
+      <div class="parallax">
+        <div style="margin-top:200px"> </div>
+        <img src="http://www.franklinchristopherbrooks.com/images/NYC.jpg" alt="NYC cityscape">
+      </div>
     </div>
 
-    <!-- Main body -->
 
-      <a href="default.html"><h2 id="name">Franklin Christopher Brooks | </h2></a>
-      <h3 style="color:white">Web Developer</h3>
-
-      <div class="icon-menu">
-        Menu
-        <i class="fa fa-bars"></i>
-      </div>
-
-    </header>
-        <div class="center">
-            <h1 style="color:white">
-            Franklin Christopher Brooks is a NYC-based <br>
-            web developer.</h1>
-            <p class="cyan two">Available from March 2017.</p>
+    <!-- ABOUT SECTION -->
+    <div class="section scrollspy about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 center">
+            <h2 class="left-align">About Me</h2>
+              <p class="flow-text z-depth-5" id="philosophy"><i>
+                "As a coder, I enjoy turning the imaginable into the deliverable.  Every problem is an adventure: an opportunity to innovate and to improve.
+                <br>
+                <br>
+                My experiences in education and customer service have taught me to advance a project in a collaborative environment.
+                <br>
+                <br>
+                Today, I’m bringing that same focus to web-based technologies."
+              </i></p>
+            </div>
+          </div>
         </div>
-
-      <div class="center-no-pad">
-            <div class="button"><a href="about.html">ABOUT</a></div>
-                       <!-- <div class="button"><a href="http://blog.franklinchristopherbrooks.com/default.html">BLOG</a></div> -->
-            <div class="button"><a href="projects.html">PROJECTS</a></div>
-            <div class="button"><a href="contact.html">CONTACT</a></div>
       </div>
 
-     <footer class="relative">
-      <a href="mailto:fcb@franklinchristopherbrooks.com"><img src="images/mail-icon.png" alt="Email Icon" class="social-icon"></a>
-      <a href="https://twitter.com/franklincbrooks"><img src="images/twitter-icon.png" alt="Twitter Logo" class="social-icon"></a>
-      <a href="https://github.com/franklinbrooks"><img src="images/github-icon.png" alt="Github Logo" class="social-icon"></a>
-      <a href="https://www.linkedin.com/in/franklin-brooks-96130b112"><img src="images/linkedin-icon.png" alt="LinkedIn Logo" class="social-icon"></a>
-      <p style="color:white;font-size:1rem">&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Franklin Christopher Brooks. All rights reserved.</p>
-   <p>
-      <a href="http://validator.w3.org/check?uri=referer"><img
+
+<!--  EDUCATION  -->
+
+    <div class="section scrollspy">
+      <div class="container block">
+        <div class="row">
+          <div class="col s12 center hoverable">
+            <h3>Education</h3>
+            <div class="col s3">
+              <a href="http://www.hunter.cuny.edu/" target="new"><img src="images/Hunter.jpg" alt="Hunter College logo" height="60" class=" hoverable"></a>
+              <a href="http://www.hunter.cuny.edu/" target="new"><h4 class="center-align">Hunter College</h4></a>
+<br>
+<br>
+              <p><i>BA: English</i></p>
+              <p><i>Cum Laude</i></p>
+            </div>
+            <div class="col s9">
+              <blockquote class="flow-text left-align blockquote">
+                As I continue to grow my coding skillset, I often reflect on my undergrauate study of English. Like other languages, the languages we use to communicate with machines also have syntax, grammar, lexicon, and style. As electronic devices occupy an ever-broader role in our lives, communication between humans grows ever more reliant on our communication with our machines.
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--   Experience  -->
+
+    <div class="section scrollspy">
+      <div class="container block">
+        <div class="row">
+          <div class="col s12 center hoverable">
+           <h3>Experience</h3>
+            <div class="col s3">
+              <a href="http://www.generalassemb.ly" target="new"><img src="images/ga_logo_color.jpg" alt="General Assembly logo" height="60" class=" hoverable"></a>
+              <a href="http://www.generalassemb.ly" target="new"><h4 class="center-align">General Assembly</h4></a>
+              <p><i>Web Development Immersive</i></p>
+<br>
+<br>
+              <p><i>November 2016 -<br>March 2017</i></p>
+            </div>
+            <div class="col s9">
+              <blockquote class="flow-text left-align blockquote">
+                The full-time WDI program at GA was my intro to building full stack web applications. There, I gained experience with several popular languages, and I developed a good broad-level overview of programming. My time in WDI prepared me well to build on that knowledge as I go on to study other frameworks. GA has been a great way to enhance my technical abilities while continuing to develop a network of skilled collaborators.
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SKILLS SECTION -->
+
+    <div class="section scrollspy about">
+      <div class="container border">
+        <div class="row">
+          <div class="col s12 m3 valign-wrapper" style="height:400px">
+              <p class="valign" id="skills">SKILLS</p>
+          </div>
+
+    <div class="col s12 m3">
+      <div class="icon-block">
+        <ul id="staggered-test">
+          <li>
+            <h4><a href="#">HTML</a></h4>
+            <p>The "M" in MVC</p>
+          </li>
+          <li>
+            <h4><a href="#">JQuery</a></h4>
+            <p>$(document).ready</p>
+          </li>
+          <li>
+            <h4><a href="#">Ruby</a></h4>
+            <p>Happy coding</p>
+          </li>
+          <li>
+            <h4><a href="#">A11y</a></h4>
+            <p>Web for all</p>
+          </li>
+          <li>
+            <h4><a href="#">Materialize</a></h4>
+            <p>Material Design</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col s12 m3">
+      <div class="icon-block">
+        <ul id="staggered-test-2">
+          <li>
+            <h4><a href="#">CSS</a></h4>
+            <p>Style substance</p>
+          </li>
+          <li>
+            <h4><a href="#">Node</a></h4>
+            <p>V8 server engine</p>
+          </li>
+          <li>
+            <h4><a href="#">React JS</a></h4>
+            <p>this.setState{}</p>
+          </li>
+          <li>
+            <h4><a href="#">Rails</a></h4>
+            <p>The Rails way...</p>
+          </li>
+          <li>
+            <h4><a href="#">Google Analytics</a></h4>
+            <p>function(i,s,o,g,r,a,m)</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col s12 m3">
+      <div class="icon-block">
+        <ul id="staggered-test-3">
+          <li>
+            <h4><a href="#">JavaScript</a></h4>
+            <p>Thanks, Brendan Eich!</p>
+          </li>
+          <li>
+            <h4><a href="#">Express JS</a></h4>
+            <p>npm run dev</p>
+          </li>
+          <li>
+            <h4><a href="#">SQL</a></h4>
+            <p>SELECT * FROM *</p>
+          </li>
+          <li>
+            <h4><a href="#">Postgres</a></h4>
+            <p>createdb test</p>
+          </li>
+          <li>
+            <h4><a href="#">SEO</a></h4>
+            <p>If they can't find you...</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+</div>
+</div>
+</div>
+
+
+    <!-- PROJECTS SECTION -->
+  <div class="about" id="projects">
+    <div class="section scrollspy about">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 center">
+            <h2 class="left-align">Projects</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!--  Project 1  -->
+      <div class="row">
+      <div class="col s12 m4" id="row1">
+        <div class="card small sticky-action">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="http://www.franklinchristopherbrooks.com/images/planets.png" alt="Screenshot of Planets app">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator">Solar System via NYC<i class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-action">
+            <a href="https://desolate-everglades-65827.herokuapp.com/" target="new">Live Site</a>
+            <a href="https://github.com/franklinbrooks/Planets" target="new">On GitHub</a>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title">EDUTAINMENT<i class="material-icons right">close</i></span>
+            <br>
+            <br>
+            <p>A tour of the solar system scaled down to the size of New York City.</p>
+            <br>
+            <ul>
+              TECHNOLOGIES USED:
+              <li>Express.js</li>
+              <li>PSQL</li>
+              <li>Axios</li>
+              <li>A-Frame</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!--  Project 2  -->
+      <div class="row">
+      <div class="col s12 m4" id="row2">
+        <div class="card small sticky-action">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="https://353a23c500dde3b2ad58-c49fe7e7355d384845270f4a7a0a7aa1.ssl.cf2.rackcdn.com/588024b866867468e2c7a33c/screenshot.png" alt="Seventeenr scheduling app screenshot">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator">2017 Scheduling App<i class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-action">
+            <a href="http://typesetter-sylvia-16076.bitballoon.com/" target="new">Live Site</a>
+            <a href="https://github.com/franklinbrooks/Seventeenr" target="new">On GitHub</a>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title">PRODUCTIVITY<i class="material-icons right">close</i></span>
+            <br>
+            <br>
+            <p>A simple To-Do list made with React.js.</p>
+            <br>
+            <ul>
+              TECHNOLOGIES USED:
+              <li>React.js</li>
+              <li>FireBase</li>
+              <li>Axios</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!--  Project 3  -->
+      <div class="row">
+      <div class="col s12 m4" id="row3">
+        <div class="card small sticky-action">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="https://github.com/franklinbrooks/Joes-Cocktail-Confections/raw/master/public/images/siteHome.png"  alt="Screenshot of Joe's Cocktail Confections app">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator">Joe's Confections<i class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-action">
+            <a href="https://pacific-savannah-99868.herokuapp.com/" target="new">Live Site</a>
+            <a href="https://github.com/franklinbrooks/Joes-Cocktail-Confections" target="new">On GitHub</a>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title">E-COMMERCE<i class="material-icons right">close</i></span>
+            <br>
+            <br>
+            <p>Express.js-based web presence for a new purveyor of sweets in NYC.</p>
+            <br>
+            <ul>
+              TECHNOLOGIES USED:
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>jQuery</li>
+              <li>Express.js</li>
+              <li>Postgres SQL</li>
+              <li>Sass CSS</li>
+              <li>Materialize</li>
+              <li>Serialize ORM</li>
+              <li>Bcrypt</li>
+              <li>Moment.js</li>
+              <li>Nodemailer</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!--  Project 4  -->
+      <div class="row">
+      <div class="col s12 m4" id="row4">
+        <div class="card small sticky-action">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="https://camo.githubusercontent.com/0bcdf66d4cad0b18d854db7ed623d466acfc3ae6/68747470733a2f2f33353361323363353030646465336232616435382d63343966653765373335356433383438343532373066346137613061376161312e73736c2e6366322e7261636b63646e2e636f6d2f3538356331306430633464396363346564323762323130322f73637265656e73686f742e706e67" alt="Image of a weather app built with React.js">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator">React.js Weather App<i class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-action">
+            <a  href="http://story-teller-fish-64812.bitballoon.com/" target="new">Live Site</a>
+            <a  href="https://github.com/franklinbrooks/React-Weather-App" target="new">On GitHub</a>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title">UTILITY<i class="material-icons right">close</i></span>
+            <br>
+            <br>
+            <p >A single-page React.js app that routes user input to an API call and retrieves local weather conditions.</p>
+            <br>
+            <ul >
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!--  Project 5  -->
+      <div class="row">
+      <div class="col s12 m4" id="row5">
+        <div class="card small sticky-action">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="https://353a23c500dde3b2ad58-c49fe7e7355d384845270f4a7a0a7aa1.ssl.cf2.rackcdn.com/58573dbbc4d9cc5f184bf25a/screenshot.png" alt="Save Our Satellites game screenshot">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator">Save Our Satellites<i class="material-icons right" style="color:#2854a1;">more_vert</i></span>
+          </div>
+          <div class="card-action">
+            <a href="http://baliff-otter-21637.bitballoon.com" target="new">Live Site</a>
+            <a href="https://github.com/franklinbrooks/Save-Our-Satellites" target="new">On GitHub</a>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title">GAME<i class="material-icons right">close</i></span>
+            <br>
+            <br>
+            <p>SOS: Save Our Satellites<br>A classic first-person-shooter game reimagined for the web.</p>
+            <br>
+            <ul>
+              TECHNOLOGIES USED:
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+      <!--  Project 6  -->
+      <div class="row">
+      <div class="col s12 m4"  id="row6">
+        <div class="card small sticky-action">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="https://353a23c500dde3b2ad58-c49fe7e7355d384845270f4a7a0a7aa1.ssl.cf2.rackcdn.com/584a367bc4d9cc23bb84ff10/screenshot.png"  alt="Screenshot of Tic Tac Toe app">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator">Tic Tac Toe<i class="material-icons right">more_vert</i></span>
+          </div>
+          <div class="card-action">
+            <a href="https://www.bitballoon.com/sites/trader-rim-30351" target="new">Live Site</a>
+            <a href="https://github.com/franklinbrooks/Tic-Tac-Toe" target="new">On Github</a>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title">GAME<i class="material-icons right">close</i></span>
+            <br>
+            <br>
+            <p>My version of the classic game.</p>
+            <br>
+            <ul>
+              TECHNOLOGIES USED:
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!-- PERSONAL -->
+    <div class="section about" id="personal">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 center">
+            <h3 class="left-align">Personal</h3>
+              <p class="flow-text">Here's what I'm up to when I'm not coding...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <footer class="relative section scrollspy" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 center">
+            <h2 class="left-align">Contact Me!</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="typewriter">QUOTE GOES HERE!</div>
+      <p><a href="mailto:fcb@franklinchristopherbrooks.com?Subject=Hello!!" target="new">fcb@franklinchristopherbrooks.com</a></p>
+      <a href="https://www.facebook.com/franklinchristopherbrooks" target="new"><img src="images/facebook.gif" alt="Facebook Logo" class="social-icon"></a>
+      <a href="https://twitter.com/franklincbrooks" target="new"><img src="images/twitter-icon.png" alt="Twitter Logo" class="social-icon"></a>
+      <a href="https://github.com/franklinbrooks" target="new"><img src="images/github-icon.png" alt="Github Logo" class="social-icon"></a>
+      <a href="https://www.linkedin.com/in/franklin-brooks-96130b112" target="new"><img src="images/linkedin-icon.png" alt="LinkedIn Logo" class="social-icon"></a>
+      <a href="https://profiles.generalassemb.ly/franklinchristopherbrooks" target="new"><img src="images/ga_logo.png" alt="General Assembly Logo" class="social-icon"></a>
+      <p style="color:white;font-size:1rem">
+        &copy;
+        <script type="text/javascript">document.write(new Date().getFullYear());</script>
+        Franklin Christopher Brooks. All rights reserved.
+      </p>
+      <p>
+        <a href="http://validator.w3.org/check?uri=referer" target="new"><img
           src="http://www.w3.org/Icons/valid-xhtml10-blue.png"
           alt="Valid XHTML 1.0!" height="31" width="88" /></a>
-    </p>
+      </p>
+
+<a href="#top">Back to top</a>
+
     </footer>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://www.materializecss.com/bin/materialize.js"></script>
+    <script src="http://www.materializecss.com/js/init.js"></script>
     <script src="app.js"></script>
     <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-92421534-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script>
+      function init() {
+        window.addEventListener('scroll', function(e){
+          var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+            shrinkOn = 100,
+            header = document.querySelector("header");
+          if (distanceY > shrinkOn) {
+          classie.add(header,"smaller");
+          }
+          else {
+            if (classie.has(header,"smaller")) {
+                classie.remove(header,"smaller");
+            }
+          }
+        });
+      }
+      window.onload = init();
+    </script>
+    <script>
+      var options = [
 
-    ga('create', 'UA-92421534-1', 'auto');
-    ga('send', 'pageview');
+/*
+
+      {selector: '#staggered-test', offset: 50, callback: function(el) {
+        Materialize.toast("This is our ScrollFire Demo!", 1500 );
+      } },
+      {selector: '#staggered-test', offset: 205, callback: function(el) {
+        Materialize.toast("Please continue scrolling!", 1500 );
+      } },
+
+*/
+
+      {selector: '#staggered-test', offset: 200, callback: function(el) {
+        Materialize.showStaggeredList($(el));
+      } },
+      {selector: '#staggered-test-2', offset: 225, callback: function(el) {
+        Materialize.showStaggeredList($(el));
+      } },
+      {selector: '#staggered-test-3', offset: 250, callback: function(el) {
+        Materialize.showStaggeredList($(el));
+      } },
+      {selector: '#image-test', offset: 500, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } }
+    ];
+    Materialize.scrollFire(options);
 
     </script>
   </body>

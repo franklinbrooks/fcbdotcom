@@ -1,0 +1,54 @@
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+<style>
+  #mycol {
+  background-image: url("http://www.alexlebedyev.com/images/img1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin:0;
+  border: 0;
+  }
+#card {
+    opacity: 0;
+    z-index: 3;
+    transition-duration: 0.8s;
+    transition-property: transform, opacity
+  }
+#card:hover {
+  opacity: 1;
+  transition-duration: 0.8s;
+  transition-property: transform, opacity;
+  }
+</style>
+
+
+<div class="row">
+  <div class="col s12 m6 l4" id="mycol">
+
+    <div class="card sticky-action" id="card">
+
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="http://www.alexlebedyev.com/images/img1a.jpg">
+      </div>
+
+<!--       <div class="card-content" id="content">
+        <span class="card-title activator grey-text text-darken-4"><i class="material-icons right"></i></span>
+      </div> -->
+
+      <div class="card-action" id="action">
+        <a href="#">This is a link</a>
+        <a href="#">This is a link</a>
+      </div>
+
+<!--       <div class="card-reveal" id="reveal">
+        <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+        <p></p>
+      </div> -->
+
+    </div>
+  </div>
+</div>
