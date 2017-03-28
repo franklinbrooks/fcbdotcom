@@ -1,28 +1,32 @@
 <!-- PROJECTS SECTION -->
 <!-- Projects title -->
-<div class="section scrollspy about" id="projects">
+<div class="section scrollspy" id="projects">
   <div class="container">
-    <div class="row">
+    <div class="row" id="row">
       <div class="col s12 center">
         <h2 class="left-align">Projects</h2>
       </div>
     </div>
   </div>
 </div>
+
 <!--  Project 1  -->
 <div class="row" id="row1">
-  <div class="col s12 m4">
+  <div class="col s12 m6 l4" id="project1">
     <div class="card small sticky-action">
       <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="http://www.franklinchristopherbrooks.com/images/planets.png" alt="Screenshot of Planets app">
+        <img class="activator" src="http://www.franklinchristopherbrooks.com/images/PlanetsScreenShot.png" alt="Screenshot of Planets app">
       </div>
+
       <div class="card-content">
         <span class="card-title activator">Solar System via NYC<i class="material-icons right">more_vert</i></span>
       </div>
+
       <div class="card-action">
-        <a href="https://desolate-everglades-65827.herokuapp.com/" target="new">Live Site</a>
+        <a href="https://desolate-everglades-65827.herokuapp.com/" id="card-link1" target="new">Live Site</a>
         <a href="https://github.com/franklinbrooks/Planets" target="new">On GitHub</a>
       </div>
+
       <div class="card-reveal">
         <span class="card-title">EDUTAINMENT<i class="material-icons right">close</i></span>
         <br>
@@ -40,12 +44,13 @@
           <li>JavaScript</li>
         </ul>
       </div>
+
     </div>
   </div>
 
 <!--  Project 2  -->
 
-  <div class="col s12 m4">
+  <div class="col s12 m6 l4" id="project2">
     <div class="card small sticky-action">
       <div class="card-image waves-effect waves-block waves-light">
         <img class="activator" src="https://353a23c500dde3b2ad58-c49fe7e7355d384845270f4a7a0a7aa1.ssl.cf2.rackcdn.com/588024b866867468e2c7a33c/screenshot.png" alt="Seventeenr scheduling app screenshot">
@@ -76,7 +81,7 @@
     </div>
   </div>
 <!--  Project 3  -->
-  <div class="col s12 m4">
+  <div class="col s12 m6 l4" id="project3">
     <div class="card small sticky-action">
       <div class="card-image waves-effect waves-block waves-light">
         <img class="activator" src="https://github.com/franklinbrooks/Joes-Cocktail-Confections/raw/master/public/images/siteHome.png"  alt="Screenshot of Joe's Cocktail Confections app">
@@ -112,10 +117,11 @@
       </div>
     </div>
   </div>
-</div>
+<!--  </div>
+
+<div class="row" id="row2">  -->
 <!--  Project 4  -->
-<div class="row" id="row2">
-  <div class="col s12 m4">
+  <div class="col s12 m6 l4" id="project4">
     <div class="card small sticky-action">
       <div class="card-image waves-effect waves-block waves-light">
         <img class="activator" src="https://camo.githubusercontent.com/0bcdf66d4cad0b18d854db7ed623d466acfc3ae6/68747470733a2f2f33353361323363353030646465336232616435382d63343966653765373335356433383438343532373066346137613061376161312e73736c2e6366322e7261636b63646e2e636f6d2f3538356331306430633464396363346564323762323130322f73637265656e73686f742e706e67" alt="Image of a weather app built with React.js">
@@ -145,7 +151,7 @@
 
 <!--  Project 5  -->
 
-  <div class="col s12 m4">
+  <div class="col s12 m6 l4" id="project5">
     <div class="card small sticky-action">
       <div class="card-image waves-effect waves-block waves-light">
         <img class="activator" src="https://353a23c500dde3b2ad58-c49fe7e7355d384845270f4a7a0a7aa1.ssl.cf2.rackcdn.com/58573dbbc4d9cc5f184bf25a/screenshot.png" alt="Save Our Satellites game screenshot">
@@ -175,7 +181,7 @@
 
 <!--  Project 6  -->
 
-  <div class="col s12 m4">
+  <div class="col s12 m6 l4" id="project6">
     <div class="card small sticky-action">
       <div class="card-image waves-effect waves-block waves-light">
         <img class="activator" src="https://353a23c500dde3b2ad58-c49fe7e7355d384845270f4a7a0a7aa1.ssl.cf2.rackcdn.com/584a367bc4d9cc23bb84ff10/screenshot.png"  alt="Screenshot of Tic Tac Toe app">

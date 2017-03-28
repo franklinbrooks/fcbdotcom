@@ -1,9 +1,49 @@
+ <style>
+
+ body{
+  background: #000;
+  padding-top: 10px;
+}
+
+p{
+  color: lime;
+  font-family: "Courier", sans-serif;
+  font-size: 16px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100em;
+  animation: type 5s steps(100, end);
+  animation-iteration-count: infinite;
+}
+
+.cursor {
+  animation: blink .7s infinite;
+}
+
+@keyframes type {
+  from { width: 0; }
+}
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+ </style>
+
+
+
+ <p>“Only those who attempt the absurd will achieve the impossible.” - M.C. Escher<span class="cursor">_</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+
+
+
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
 
-<style>
+<!-- <style>
   #mycol {
   background-image: url("http://www.alexlebedyev.com/images/img1.jpg");
   background-repeat: no-repeat;
@@ -35,20 +75,20 @@
         <img class="activator" src="http://www.alexlebedyev.com/images/img1a.jpg">
       </div>
 
-<!--       <div class="card-content" id="content">
+      <div class="card-content" id="content">
         <span class="card-title activator grey-text text-darken-4"><i class="material-icons right"></i></span>
-      </div> -->
+      </div>
 
       <div class="card-action" id="action">
         <a href="#">This is a link</a>
         <a href="#">This is a link</a>
       </div>
 
-<!--       <div class="card-reveal" id="reveal">
+      <div class="card-reveal" id="reveal">
         <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
         <p></p>
-      </div> -->
+      </div>
 
     </div>
   </div>
-</div>
+</div> -->
