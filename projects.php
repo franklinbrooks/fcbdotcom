@@ -1,19 +1,30 @@
 <!-- PROJECTS SECTION -->
 <!-- Projects title -->
-<div class="section scrollspy" id="projects">
-  <div class="container">
-    <div class="row" id="row">
-      <div class="col s12 center">
-        <h2 class="left-align">Projects</h2>
+<div class="section project">
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col s12 m5 offset-m1">
+      <div class="card-panel red center" id="projects">
+        <h2>
+          <span class="white-text">Projects
+          </span>
+        </h2>
       </div>
     </div>
   </div>
+  <br>
+  <br>
+  <br>
+  <br>
 </div>
 
 <!--  Project 1  -->
 <div class="row" id="row1">
   <div class="col s12 m6 l4" id="project1">
-    <div class="card small sticky-action">
+    <div class="card small sticky-action" id="card1">
       <div class="card-image waves-effect waves-block waves-light">
         <img class="activator" src="http://www.franklinchristopherbrooks.com/images/PlanetsScreenShot.png" alt="Screenshot of Planets app">
       </div>
@@ -24,16 +35,16 @@
 
       <div class="card-action">
         <a href="https://desolate-everglades-65827.herokuapp.com/" id="card-link1" target="new">Live Site</a>
-        <a href="https://github.com/franklinbrooks/Planets" target="new">On GitHub</a>
+        <a href="https://github.com/franklinbrooks/Planets" id="card-link2"target="new">On GitHub</a>
       </div>
 
       <div class="card-reveal">
         <span class="card-title">EDUTAINMENT<i class="material-icons right">close</i></span>
         <br>
         <br>
-        <p>A tour of the solar system scaled down to the size of New York City.</p>
+        <p class="card-info">A tour of the solar system scaled down to the size of New York City.</p>
         <br>
-        <p>TECHNOLOGIES USED:</p>
+        <p class="card-info">TECHNOLOGIES USED:</p>
         <ul>
           <li>Express.js</li>
           <li>PSQL</li>
@@ -51,7 +62,7 @@
 <!--  Project 2  -->
 
   <div class="col s12 m6 l4" id="project2">
-    <div class="card small sticky-action">
+    <div class="card small sticky-action" id="card2">
       <div class="card-image waves-effect waves-block waves-light">
         <img class="activator" src="https://353a23c500dde3b2ad58-c49fe7e7355d384845270f4a7a0a7aa1.ssl.cf2.rackcdn.com/588024b866867468e2c7a33c/screenshot.png" alt="Seventeenr scheduling app screenshot">
       </div>
@@ -59,16 +70,16 @@
         <span class="card-title activator">2017 Scheduling App<i class="material-icons right">more_vert</i></span>
       </div>
       <div class="card-action">
-        <a href="http://typesetter-sylvia-16076.bitballoon.com/" target="new">Live Site</a>
-        <a href="https://github.com/franklinbrooks/Seventeenr" target="new">On GitHub</a>
+        <a href="http://typesetter-sylvia-16076.bitballoon.com/"  id="card-link3" target="new">Live Site</a>
+        <a href="https://github.com/franklinbrooks/Seventeenr" id="card-link4" target="new">On GitHub</a>
       </div>
       <div class="card-reveal">
         <span class="card-title">PRODUCTIVITY<i class="material-icons right">close</i></span>
         <br>
         <br>
-        <p>A simple To-Do list made with React.js.</p>
+        <p class="card-info">A simple To-Do list made with React.js.</p>
         <br>
-        <p>TECHNOLOGIES USED:</p>
+        <p class="card-info">TECHNOLOGIES USED:</p>
         <ul>
           <li>React.js</li>
           <li>FireBase</li>
@@ -82,7 +93,7 @@
   </div>
 <!--  Project 3  -->
   <div class="col s12 m6 l4" id="project3">
-    <div class="card small sticky-action">
+    <div class="card small sticky-action" id="card3">
       <div class="card-image waves-effect waves-block waves-light">
         <img class="activator" src="https://github.com/franklinbrooks/Joes-Cocktail-Confections/raw/master/public/images/siteHome.png"  alt="Screenshot of Joe's Cocktail Confections app">
       </div>
@@ -90,16 +101,16 @@
         <span class="card-title activator">Joe's Confections<i class="material-icons right">more_vert</i></span>
       </div>
       <div class="card-action">
-        <a href="https://pacific-savannah-99868.herokuapp.com/" target="new">Live Site</a>
-        <a href="https://github.com/franklinbrooks/Joes-Cocktail-Confections" target="new">On GitHub</a>
+        <a href="https://pacific-savannah-99868.herokuapp.com/" id="card-link5" target="new">Live Site</a>
+        <a href="https://github.com/franklinbrooks/Joes-Cocktail-Confections" id="card-link6" target="new">On GitHub</a>
       </div>
       <div class="card-reveal">
         <span class="card-title">E-COMMERCE<i class="material-icons right">close</i></span>
         <br>
         <br>
-        <p>Express.js-based web presence for a new purveyor of sweets in NYC.</p>
+        <p class="card-info">Express.js-based web presence for a new purveyor of sweets in NYC.</p>
         <br>
-        <p>TECHNOLOGIES USED:</p>
+        <p class="card-info">TECHNOLOGIES USED:</p>
         <ul>
           <li>HTML</li>
           <li>CSS</li>
@@ -122,7 +133,7 @@
 <div class="row" id="row2">  -->
 <!--  Project 4  -->
   <div class="col s12 m6 l4" id="project4">
-    <div class="card small sticky-action">
+    <div class="card small sticky-action" id="card4">
       <div class="card-image waves-effect waves-block waves-light">
         <img class="activator" src="https://camo.githubusercontent.com/0bcdf66d4cad0b18d854db7ed623d466acfc3ae6/68747470733a2f2f33353361323363353030646465336232616435382d63343966653765373335356433383438343532373066346137613061376161312e73736c2e6366322e7261636b63646e2e636f6d2f3538356331306430633464396363346564323762323130322f73637265656e73686f742e706e67" alt="Image of a weather app built with React.js">
       </div>
@@ -130,16 +141,16 @@
         <span class="card-title activator">React.js Weather App<i class="material-icons right">more_vert</i></span>
       </div>
       <div class="card-action">
-        <a  href="http://story-teller-fish-64812.bitballoon.com/" target="new">Live Site</a>
-        <a  href="https://github.com/franklinbrooks/React-Weather-App" target="new">On GitHub</a>
+        <a  href="http://story-teller-fish-64812.bitballoon.com/" id="card-link7" target="new">Live Site</a>
+        <a  href="https://github.com/franklinbrooks/React-Weather-App" id="card-link8" target="new">On GitHub</a>
       </div>
       <div class="card-reveal">
         <span class="card-title">UTILITY<i class="material-icons right">close</i></span>
         <br>
         <br>
-        <p >A single-page React.js app that routes user input to an API call and retrieves local weather conditions.</p>
+        <p class="card-info">A single-page React.js app that routes user input to an API call and retrieves local weather conditions.</p>
         <br>
-        <p>TECHNOLOGIES USED:</p>
+        <p class="card-info">TECHNOLOGIES USED:</p>
         <ul >
           <li>HTML</li>
           <li>CSS</li>
@@ -152,7 +163,7 @@
 <!--  Project 5  -->
 
   <div class="col s12 m6 l4" id="project5">
-    <div class="card small sticky-action">
+    <div class="card small sticky-action" id="card5">
       <div class="card-image waves-effect waves-block waves-light">
         <img class="activator" src="https://353a23c500dde3b2ad58-c49fe7e7355d384845270f4a7a0a7aa1.ssl.cf2.rackcdn.com/58573dbbc4d9cc5f184bf25a/screenshot.png" alt="Save Our Satellites game screenshot">
       </div>
@@ -160,16 +171,16 @@
         <span class="card-title activator">Save Our Satellites<i class="material-icons right" >more_vert</i></span>
       </div>
       <div class="card-action">
-        <a href="http://baliff-otter-21637.bitballoon.com" target="new">Live Site</a>
-        <a href="https://github.com/franklinbrooks/Save-Our-Satellites" target="new">On GitHub</a>
+        <a href="http://baliff-otter-21637.bitballoon.com" id="card-link9" target="new">Live Site</a>
+        <a href="https://github.com/franklinbrooks/Save-Our-Satellites" id="card-link10" target="new">On GitHub</a>
       </div>
       <div class="card-reveal">
         <span class="card-title">GAME<i class="material-icons right">close</i></span>
         <br>
         <br>
-        <p>SOS: Save Our Satellites<br>A classic first-person-shooter game reimagined for the web.</p>
+        <p class="card-info">SOS: Save Our Satellites<br>A classic first-person-shooter game reimagined for the web.</p>
         <br>
-        <p>TECHNOLOGIES USED:</p>
+        <p class="card-info">TECHNOLOGIES USED:</p>
         <ul>
           <li>HTML</li>
           <li>CSS</li>
@@ -182,7 +193,7 @@
 <!--  Project 6  -->
 
   <div class="col s12 m6 l4" id="project6">
-    <div class="card small sticky-action">
+    <div class="card small sticky-action" id="card6">
       <div class="card-image waves-effect waves-block waves-light">
         <img class="activator" src="https://353a23c500dde3b2ad58-c49fe7e7355d384845270f4a7a0a7aa1.ssl.cf2.rackcdn.com/584a367bc4d9cc23bb84ff10/screenshot.png"  alt="Screenshot of Tic Tac Toe app">
       </div>
@@ -190,16 +201,16 @@
         <span class="card-title activator">Tic Tac Toe<i class="material-icons right">more_vert</i></span>
       </div>
       <div class="card-action">
-        <a href="https://www.bitballoon.com/sites/trader-rim-30351" target="new">Live Site</a>
-        <a href="https://github.com/franklinbrooks/Tic-Tac-Toe" target="new">On Github</a>
+        <a href="https://www.bitballoon.com/sites/trader-rim-30351" id="card-link11" target="new">Live Site</a>
+        <a href="https://github.com/franklinbrooks/Tic-Tac-Toe" id="card-link12" target="new">On Github</a>
       </div>
       <div class="card-reveal">
         <span class="card-title">GAME<i class="material-icons right">close</i></span>
         <br>
         <br>
-        <p>My version of the classic game.</p>
+        <p class="card-info">My version of the classic game.</p>
         <br>
-        <p>TECHNOLOGIES USED:</p>
+        <p class="card-info">TECHNOLOGIES USED:</p>
         <ul>
           <li>HTML</li>
           <li>CSS</li>
