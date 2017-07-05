@@ -4,11 +4,11 @@
   <br>
   <br>
   <div class="row">
-    <div class="col s12 m4 offset-m1">
+    <div class="col s12 m5 l4 offset-m1 offset-l1">
       <div class="card-panel red center foo">
         <h2>
-          <div class="white-text" id="effect"><span>ABOUT ME</span>
-          </div>
+          <span class="white-text" id="effect"><span>ABOUT ME</span>
+          </span>
         </h2>
       </div>
     </div>
@@ -20,7 +20,7 @@
     <div class="row">
       <div class="col m12 l4">
 <div class="foo">
-        <div id="me" class="grow offset-l1"></div>
+        <div id="me" class="grow z-depth-5 responsive-img circle"></div>
 </div>
         <br>
         <br>
