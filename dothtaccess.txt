@@ -1,0 +1,41 @@
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType text/html "access plus 600 seconds"
+ExpiresByType text/php "access plus 600 seconds"
+ExpiresByType text/css "access 1 day"
+ExpiresByType text/x-javascript "access 1 day"
+ExpiresByType image/jpg "access 1 month"
+ExpiresByType image/jpeg "access 1 month"
+ExpiresByType image/gif "access 1 month"
+ExpiresByType image/png "access 1 month"
+ExpiresByType application/pdf "access 1 month"
+ExpiresByType application/mp4 "access 1 month"
+ExpiresByType application/x-shockwave-flash "access 1 month"
+ExpiresByType image/x-icon "access 1 month"
+ExpiresDefault "access 1 day"
+</IfModule>
+## EXPIRES CACHING ##
+
+<IfModule mod_headers.c>
+    Header set Connection keep-alive
+    <filesmatch "\.(ico|flv|gif|swf|eot|woff|otf|ttf|svg)$">
+        Header set Cache-Control "max-age=2592000, public"
+    </filesmatch>
+    <filesmatch "\.(jpg|jpeg|png)$">
+        Header set Cache-Control "max-age=2592000, public"
+    </filesmatch>
+    <filesmatch "\.(eot|woff|otf|ttf|svg)$">
+        Header set Cache-Control "max-age=2592000, public"
+    </filesmatch>
+    # css and js should use private for proxy caching https://developers.google.com/speed/docs/best-practices/caching#LeverageProxyCaching
+    <filesmatch "\.(css)$">
+        Header set Cache-Control "max-age=86400, private"
+    </filesmatch>
+    <filesmatch "\.(js)$">
+        Header set Cache-Control "max-age=86400, private"
+    </filesmatch>
+    <filesMatch "\.(x?html?|php)$">
+        Header set Cache-Control "max-age=600, private, must-revalidate"
+      </filesMatch>
+</IfModule>
