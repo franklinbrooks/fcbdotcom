@@ -1,0 +1,10 @@
+{
+  "name": "Franklin Christopher Brooks -- Full Stack Web Developer",
+  "description": "Professional Web Development Portfolio Site for Franklin Christopher Brooks",
+  "short_name": "FCB Web Dev",
+  "icons": [{
+    "src": "images/icon.png",
+    "sizes": "16x16",
+    "type": "image/x-icon"
+  }]
+}
