@@ -1,0 +1,225 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <!-- Let browser know website is optimized for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Franklin Christopher Brooks</title>
+    <!-- Startup configuration -->
+    <link rel="manifest" href="manifest.json">
+    <!-- Fallback application metadata for legacy browsers -->
+    <meta name="application-name" content="Franklin Christopher Brooks | Full Stack Web Developer">
+    <link rel="icon" sizes="16x16" href="images/favicon.ico">
+    <!--Import Google Fonts-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400;300' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <!-- Local Styles -->
+    <link href="style.css" type="text/css" rel="stylesheet" media="screen"/>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <!-- Animate CSS from https://daneden.github.io/animate.css/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="image_src" href="images/og-image.png">
+    <link rel="alternate" hreflang="en-us" href="https://www.franklinchristopherbrooks.com/"/>
+    <link rel="canonical" href="https://www.franklinchristopherbrooks.com/"/>
+    <link type="text/plain" rel="author" href="https://www.franklinchristopherbrooks.com/"/>
+    <!-- OPEN GRAPH SECTION -->
+    <meta property="og:url" content="https://www.franklinchristopherbrooks.com/">
+    <meta property="og:title" content="Franklin Christopher Brooks | Web Developer">
+    <meta property="og:site_name" content="Franklin Christopher Brooks | Web Developer">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:description" content="Franklin Christopher Brooks is a Sacramento-based web developer.">
+    <meta property="og:image" content="https://www.franklinchristopherbrooks.com/images/og-image.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="627">
+    <meta name="author" content="Franklin Christopher Brooks">
+    <meta name="description" content="Franklin Christopher Brooks is a Sacramento-based web developer."/>
+    <meta name="theme-color" content="#f44336" />
+    <script type="text/javascript">
+      function hgsubmit() {
+        // Get the modal
+        var modal = document.getElementById('myModal');
+        // Get form
+        var frm = document.getElementsByName('hgmailer')[0];
+        // get input value of name
+        var inpObj = document.getElementById("emailValue");
+        if (/^[A-Za-z]+((\s)?((\'|\-|\.)?([A-Za-z])+))*$/.test(document.hgmailer.name.value) == false) {
+          document.getElementById("nameError").style.visibility = "visible";
+        } else if ((/^[A-Za-z]+((\s)?((\'|\-|\.)?([A-Za-z])+))*$/.test(document.hgmailer.name.value) == true) && (/^\S+@[a-z0-9_.-]+\.[a-z]{2,6}$/i.test(document.hgmailer.email.value) == false)) {
+          document.getElementById("nameError").style.visibility = "hidden";
+          document.getElementById("emailError").style.visibility = "visible";
+        } else if ((/^[A-Za-z]+((\s)?((\'|\-|\.)?([A-Za-z])+))*$/.test(document.hgmailer.name.value) == true) && (/^\S+@[a-z0-9_.-]+\.[a-z]{2,6}$/i.test(document.hgmailer.email.value) == true) && (/\S+/.test(document.hgmailer.comment.value) == false)) {
+          document.getElementById("nameError").style.visibility = "hidden";
+          document.getElementById("emailError").style.visibility = "hidden";
+          document.getElementById("commentError").style.visibility = "visible";
+        } else {
+          /*document.hgmailer.submit();*/
+          frm.reset();  // Reset all form data
+          document.getElementById("nameError").style.visibility = "hidden";
+          document.getElementById("emailError").style.visibility = "hidden";
+          document.getElementById("commentError").style.visibility = "hidden";
+          modal.style.display = "block";
+        }
+      }
+    </script>
+    <style type="text/css">
+      #dummyframe {
+        display: none;
+      }
+      .form {
+        background-color: gray;
+        border: 1px solid black;
+      }
+      .form h3 {
+        color: red;
+      }
+      label {
+        color: white;
+      }
+      input[type=text], input[type=email] {
+        display : block;
+        height: 2.5em; /* for IE */
+        vertical-align: middle; /* This is optional but it makes legacy IEs look better */
+        padding : 0px;
+        color: black;
+        background-color: white;
+      }
+      input:focus, textarea:focus {
+        background   : rgba(255,255,255,.9);
+        border-radius: 5px;
+        outline      : none;
+      }
+      textarea {
+        color: black;
+        background-color: white;
+        display : block;
+        padding : 0px;
+        height  : 100px;
+        resize  : none;
+        overflow: auto;
+      }
+      button, input, select, textarea {
+        font-family : inherit;
+        font-size   : 100%;
+        -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+           -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+                box-sizing: border-box;
+      }
+      input[type=button] {
+        display : block;
+        padding : 5px;
+        color: black;
+        border: 1px solid gray;
+        border-radius: 3px;
+      }
+      input[type=button]:hover {
+        background-color: red;
+      }
+      #nameError, #emailError, #commentError {
+        visibility: hidden;
+        color: red;
+        margin-top: -15px;
+        font-size: .75rem;
+      }
+      /* The Modal (background) */
+      .modal1 {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          padding-top: 0px; /* Location of the box */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 150%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      }
+
+      /* Modal Content */
+      .modal-content {
+        position: relative;
+        color: black;
+        background-color: #fefefe;
+        margin: 15% auto; /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 75%;
+        height: 200px;
+      }
+
+      /* The Close Button */
+      .close {
+        color: red;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form container">
+      <h3>Reach out!</h3>
+      <br />
+      <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe"></iframe>
+      <form action="" method="post" name="hgmailer" target="dummyframe">
+        <input type="hidden" name="recipient" value="" readonly>
+        <input type="hidden" name="subject" value="FormMail E-Mail" readonly>
+        <label>Your Name: </label>
+        <br />
+        <input id="nameValue" type="text" name="name" maxlength="50" value="" placeholder="your name">
+        <p id="nameError">Please provide your name</p>
+        <label>Your E-Mail Address: </label>
+        <br />
+        <input id="emailValue" type="email" name="email" maxlength="50" value="" placeholder="you@email.com">
+        <p id="emailError">A valid email address is required</p>
+        <br />
+        <label>Your message: </label>
+        <br />
+        <textarea name="comment" cols="50" rows="10" maxlength="500" placeholder="your message"></textarea>
+        <br />
+        <p id="commentError">An email message is required</p>
+        <br />
+        <input type="submit" id="mySubmit" value="Submit" onclick="hgsubmit();" />
+      </form>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal1">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        Thank you!  I'll be in touch soon!
+      </div>
+    </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById('myModal');
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+  </script>
+  </body>
+</html>
