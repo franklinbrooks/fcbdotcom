@@ -34,7 +34,7 @@
           "As a coder, I enjoy turning the imaginable into the deliverable.  Every problem is an adventure: an opportunity to innovate and to improve.
           <br>
           <br>
-          My experiences in education and customer service have taught me to advance a project in a collaborative environment.
+          My experiences in education and customer service have taught me how to advance a project in a collaborative environment.
           <br>
           <br>
           Today, I’m bringing that same focus to web-based technologies."
